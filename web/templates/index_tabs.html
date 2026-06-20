@@ -198,6 +198,9 @@
         th, td { padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,.12); text-align: left; vertical-align: top; font-size: 13px; }
         th { color: rgba(255,255,255,.7); font-weight: 700; background: rgba(255,255,255,.08); }
         .article-title { max-width: 360px; line-height: 1.45; font-weight: 600; }
+        .article-title a { transition: color 0.2s; }
+        .article-title a:hover { color: var(--accent); text-decoration: underline; }
+        .chapter-title a:hover { color: var(--accent); text-decoration: underline; }
 
         /* Tags & Badges */
         .tag, .importance, .link-btn {
@@ -548,25 +551,27 @@
 
             const rows = state.visibleNews.map(item => {
                 const category = item.category || {};
-                const companies = item.entities?.companies || [];
                 const importance = getImportance(item);
                 const hasUrl = item.url && !item.is_demo && !String(item.url).includes('example.com');
+                const titleHtml = hasUrl
+                    ? `<a href="${escapeAttr(item.url)}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; font-weight: 600;">${escapeHtml(item.title || '')}</a>`
+                    : `<span style="font-weight: 600;">${escapeHtml(item.title || '')}</span>`;
+
                 return `<tr>
                     <td>${formatDateTime(item.publish_time)}</td>
                     <td><strong>${escapeHtml(item.source || '未知')}</strong></td>
-                    <td><div class="article-title">${escapeHtml(item.title || '')}</div></td>
+                    <td><div class="article-title">${titleHtml}</div></td>
                     <td>${escapeHtml(category.event_type || '未分类')}</td>
                     <td>${escapeHtml(category.industry || '其他')}</td>
-                    <td>${companies.slice(0, 3).map(escapeHtml).join('、') || '未抽取'}</td>
                     <td><span class="importance ${importance.className}">${importance.label}</span></td>
                     <td>${(item.tags || []).slice(0, 5).map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</td>
-                    <td>${hasUrl ? `<a class="link-btn" href="${escapeAttr(item.url)}" target="_blank">原文</a>` : '<span class="link-btn missing">无链接</span>'}</td>
                 </tr>`;
             }).join('');
 
             document.getElementById('newsList').innerHTML = `<table>
-                <thead><tr><th>时间</th><th>来源</th><th>标题</th><th>类型</th><th>赛道</th><th>公司</th><th>重要性</th><th>标签</th><th>链接</th></tr></thead>
+                <thead><tr><th>时间</th><th>来源</th><th>标题</th><th>类型</th><th>赛道</th><th>重要性</th><th>标签</th></tr></thead>
                 <tbody>${rows}</tbody>
+            </table>`;
             </table>`;
         }
 
@@ -581,17 +586,22 @@
                 return;
             }
 
-            document.getElementById('topNewsList').innerHTML = topNews.map(item => `
-                <div class="chapter">
-                    <div class="chapter-toggle" style="cursor: default;">
+            document.getElementById('topNewsList').innerHTML = topNews.map(item => {
+                const hasUrl = item.url && !item.is_demo && !String(item.url).includes('example.com');
+                const titleHtml = hasUrl
+                    ? `<a href="${escapeAttr(item.url)}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">${escapeHtml(item.title)}</a>`
+                    : escapeHtml(item.title);
+
+                return `<div class="chapter">
+                    <div class="chapter-toggle" style="cursor: ${hasUrl ? 'pointer' : 'default'};" ${hasUrl ? `onclick="window.open('${escapeAttr(item.url)}', '_blank')"` : ''}>
                         <div>
-                            <div class="chapter-title">${escapeHtml(item.title)}</div>
+                            <div class="chapter-title">${titleHtml}</div>
                             <small class="chapter-subtitle">${escapeHtml(item.source)} · ${formatDateTime(item.publish_time)}</small>
                         </div>
                         <span class="importance">${getImportance(item).label}</span>
                     </div>
-                </div>
-            `).join('');
+                </div>`;
+            }).join('');
         }
 
         // 渲染章节分析
