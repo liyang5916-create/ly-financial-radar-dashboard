@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Process -FilePath \"cmd.exe\" -ArgumentList \"/c run_web.bat\" -WorkingDirectory $PWD)",
+      "PowerShell(git *)",
+      "PowerShell(git status *)",
+      "PowerShell(git init *)"
+    ]
+  }
+}

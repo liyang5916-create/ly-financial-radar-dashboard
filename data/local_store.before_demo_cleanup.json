@@ -1,0 +1,2005 @@
+{
+  "news": [
+    {
+      "_id": "demo-1",
+      "title": "AI芯片公司完成B轮融资，资金将用于推理芯片量产",
+      "source": "36氪",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T21:09:35.932345",
+      "content": "某AI芯片公司完成数亿元B轮融资，投资方包括产业基金与一线美元基金。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "融资并购",
+        "industry": "融资",
+        "market": "一级市场"
+      },
+      "entities": {
+        "companies": [
+          "AI芯片公司",
+          "某AI芯片公司",
+          "投资方包括产业基金与一线美元基金"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "半导体",
+        "芯片",
+        "AI应用",
+        "推理",
+        "融资",
+        "B轮"
+      ],
+      "heat_score": 75
+    },
+    {
+      "_id": "demo-2",
+      "title": "多家券商上调半导体设备板块评级",
+      "source": "雪球",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T19:09:35.932345",
+      "content": "市场关注国产光刻、先进封装和晶圆厂资本开支回暖。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "市场动态",
+        "industry": "半导体",
+        "market": "二级市场"
+      },
+      "entities": {
+        "companies": [
+          "多家券商上调半导体"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "半导体",
+        "晶圆",
+        "光刻",
+        "市场动态"
+      ],
+      "heat_score": 68
+    },
+    {
+      "_id": "demo-3",
+      "title": "机器人产业链公司发布新一代具身智能控制器",
+      "source": "36氪",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T17:09:35.932345",
+      "content": "新品面向工业机器人和人形机器人场景，已进入小批量试产。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "产品发布",
+        "industry": "机器人",
+        "market": "产业资讯"
+      },
+      "entities": {
+        "companies": [
+          "机器人产业链公司"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "机器人",
+        "具身智能",
+        "人形机器人",
+        "工业机器人",
+        "产品发布"
+      ],
+      "heat_score": 60
+    },
+    {
+      "_id": "demo-4",
+      "title": "交易所发布IPO审核新规，强调信息披露质量",
+      "source": "财联社",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T15:09:35.932345",
+      "content": "政策监管方向继续强化财务真实性和持续经营能力审核。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "政策监管",
+        "industry": "IPO",
+        "market": "政策驱动"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "IPO",
+        "政策监管"
+      ],
+      "heat_score": 75
+    },
+    {
+      "_id": "demo-5",
+      "title": "新能源龙头披露季度财报，储能业务收入同比增长",
+      "source": "36氪",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T13:09:35.932345",
+      "content": "公司财报显示储能与海外渠道是本季度增长来源。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "财报业绩",
+        "industry": "其他",
+        "market": "产业资讯"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "财报业绩",
+        "其他"
+      ],
+      "heat_score": 75
+    },
+    {
+      "_id": "demo-6",
+      "title": "港股科技指数午后拉升，AI应用方向活跃",
+      "source": "雪球",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T11:09:35.932345",
+      "content": "大模型应用、算力租赁和云服务相关标的成交放大。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "产品发布",
+        "industry": "AI应用",
+        "market": "二级市场"
+      },
+      "entities": {
+        "companies": [
+          "港股科技"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "AI应用",
+        "大模型",
+        "产品发布"
+      ],
+      "heat_score": 83
+    },
+    {
+      "_id": "demo-7",
+      "title": "消费电子公司推出AI眼镜新品",
+      "source": "36氪",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T09:09:35.932345",
+      "content": "产品发布会聚焦端侧大模型、低功耗芯片与多模态交互。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "产品发布",
+        "industry": "AI应用",
+        "market": "产业资讯"
+      },
+      "entities": {
+        "companies": [
+          "消费电子公司"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "半导体",
+        "芯片",
+        "AI应用",
+        "大模型",
+        "产品发布"
+      ],
+      "heat_score": 75
+    },
+    {
+      "_id": "demo-8",
+      "title": "产业资本并购半导体材料公司",
+      "source": "财联社",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T07:09:35.932345",
+      "content": "本次收购预计完善上游材料布局，提升供应链安全边际。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "融资并购",
+        "industry": "半导体",
+        "market": "一级市场"
+      },
+      "entities": {
+        "companies": [
+          "产业资本并购半导体材料公司"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "半导体",
+        "融资并购"
+      ],
+      "heat_score": 75
+    },
+    {
+      "_id": "demo-9",
+      "title": "人形机器人供应链订单排产提速",
+      "source": "雪球",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T05:09:35.932345",
+      "content": "市场讨论集中在丝杠、减速器、传感器和控制算法。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "市场动态",
+        "industry": "机器人",
+        "market": "二级市场"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "机器人",
+        "人形机器人",
+        "市场动态"
+      ],
+      "heat_score": 68
+    },
+    {
+      "_id": "demo-10",
+      "title": "央行公开市场操作延续稳健，资金面保持均衡",
+      "source": "财联社",
+      "url": "",
+      "source_note": "演示数据，非真实原文",
+      "is_demo": true,
+      "publish_time": "2026-06-14T03:09:35.932345",
+      "content": "政策驱动因素影响债券、银行和券商板块预期。",
+      "crawl_time": "2026-06-14T22:09:35.932345",
+      "category": {
+        "event_type": "政策监管",
+        "industry": "其他",
+        "market": "政策驱动"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "政策监管",
+        "其他"
+      ],
+      "heat_score": 60
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+      "title": "2026年6月上旬流通领域重要生产资料市场价格变动情况",
+      "original_title": "2026年6月上旬流通领域重要生产资料市场价格变动情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-14T09:30:00",
+      "content": "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年6月上旬与5月下旬相比，14种产品价格上涨，33种下降，3种持平。 2026年6月上旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢（...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+      "title": "2026年5月份居民消费价格同比上涨1.2%",
+      "original_title": "2026年5月份居民消费价格同比上涨1.2%",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-10T09:30:02",
+      "content": "2026年5月份，全国居民消费价格同比上涨1.2%。其中，城市上涨1.3%，农村上涨1.1%；食品价格下降1.7%，非食品价格上涨1.9%；消费品价格上涨1.6%，服务价格上涨0.8%。1­­—5月平均，全国居民消费价格比上年同期上涨1.0%。 5月份，全国居民消费价格环比下降0.1%。其中，城市下降0.1%，农村下降0.1%；食品价格下...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+      "title": "2026年5月份工业生产者出厂价格同比上涨3.9% 环比上涨0.5%",
+      "original_title": "2026年5月份工业生产者出厂价格同比上涨3.9% 环比上涨0.5%",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-10T09:30:01",
+      "content": "2026年5月份，全国工业生产者出厂价格同比上涨3.9%，环比上涨0.5%。工业生产者购进价格同比上涨5.8%，环比上涨1.3%。1—5月平均，工业生产者出厂价格比上年同期上涨1.0%，工业生产者购进价格上涨1.6%。 一、工业生产者价格同比变动情况 5月份，工业生产者出厂价格中，生产资料价格同比上涨5.2%，影响...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+      "title": "2026年5月下旬流通领域重要生产资料市场价格变动情况",
+      "original_title": "2026年5月下旬流通领域重要生产资料市场价格变动情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-04T09:30:00",
+      "content": "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年5月下旬与5月中旬相比，13种产品价格上涨，36种下降，1种持平。 2026年5月下旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢（...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+      "title": "2026年5月中国采购经理指数运行情况",
+      "original_title": "2026年5月中国采购经理指数运行情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-31T09:30:01",
+      "content": "国家统计局服务业调查中心中国物流与采购联合会 一、中国制造业采购经理指数运行情况 5月份，制造业采购经理指数（PMI）为50.0%，比上月下降0.3个百分点，位于临界点。 从企业规模看，大型企业PMI为51.1%，比上月上升0.9个百分点，高于临界点；中、小型企业PMI分别为48.6%和48.5%，比上月下降1.9个和1....",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "全球市场",
+        "统计局",
+        "PMI",
+        "市场数据"
+      ],
+      "heat_score": 85,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+      "title": "2026年1—4月份全国规模以上工业企业利润增长18.2%",
+      "original_title": "2026年1—4月份全国规模以上工业企业利润增长18.2%",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-27T09:30:01",
+      "content": "1—4月份，全国规模以上工业企业实现利润总额24358.4亿元，同比增长18.2%（按可比口径计算，详见附注二）。 1—4月份，规模以上工业企业中，国有控股企业实现利润总额8271.5亿元，同比增长17.1%；股份制企业实现利润总额18834.4亿元，增长24.0%；外商及港澳台投资企业实现利润总额5422.4亿元，增长2.3%；私营企...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+      "title": "2026年5月中旬流通领域重要生产资料市场价格变动情况",
+      "original_title": "2026年5月中旬流通领域重要生产资料市场价格变动情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-24T09:30:00",
+      "content": "中国统计信息服务中心 卓创资讯 据对全国流通领域9大类50种重要生产资料市场价格的监测显示，2026年5月中旬与5月上旬相比，20种产品价格上涨，23种下降，7种持平。 2026年5月中旬流通领域重要生产资料市场价格变动情况 产品名称单位本期价格（元）比上期价格涨跌（元）涨跌幅（%）一、黑色金属 螺纹钢（...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+      "title": "2025年全国1%人口抽样调查主要数据公报",
+      "original_title": "2025年全国1%人口抽样调查主要数据公报",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-22T03:00:00",
+      "content": "2025年全国1%人口抽样调查主要数据公报[1] 国家统计局2026年5月22日 全国1%人口抽样调查是一项重大国情国力调查。根据《全国人口普查条例》规定和《国务院办公厅关于开展2025年全国1%人口抽样调查的通知》（国办函〔2024〕71号）要求，我国进行了2025年全国1%人口抽样调查，调查的标准时点为2025年11月1日零时。按...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "全球市场",
+        "统计局",
+        "市场数据"
+      ],
+      "heat_score": 85,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+      "title": "1—4月份国民经济保持稳中有进发展态势",
+      "original_title": "1—4月份国民经济保持稳中有进发展态势",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-18T10:00:05",
+      "content": "（2026年5月18日）国家统计局 1—4月份，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央、国务院决策部署，坚持稳中求进工作总基调，完整准确全面贯彻新发展理念，加快构建新发展格局，有效实施更加积极有为的宏观政策，着力稳就业、稳企业、稳市场、稳预期，生产供给平稳增长，市场销售...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "全球市场",
+        "统计局",
+        "市场数据"
+      ],
+      "heat_score": 84,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+      "title": "2026年1—4月份规模以上工业增加值增长5.6%",
+      "original_title": "2026年1—4月份规模以上工业增加值增长5.6%",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-18T10:00:04",
+      "content": "1—4月份，规模以上工业增加值同比实际增长5.6%（增加值增速均为扣除价格因素的实际增长率）。4月份，规模以上工业增加值同比增长4.1%。从环比看，4月份，规模以上工业增加值比上月增长0.05%。 分三大门类看，4月份，采矿业增加值同比增长3.8%，制造业增长4.0%，电力、热力、燃气及水生产和供应业增长5.3%。...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+      "title": "2026年1—4月份全国固定资产投资基本情况",
+      "original_title": "2026年1—4月份全国固定资产投资基本情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-18T10:00:03",
+      "content": "1—4月份，全国固定资产投资（不含农户）141293亿元，同比下降1.6%（按可比口径计算，详见附注7）。 分产业看，第一产业投资3150亿元，同比增长10.1%；第二产业投资51065亿元，增长2.5%；第三产业投资87077亿元，下降4.2%。 工业投资同比增长2.5%。其中，采矿业投资增长11.1%，制造业投资增长1.2%，电力...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+      "title": "2026年1—4月份全国房地产市场基本情况",
+      "original_title": "2026年1—4月份全国房地产市场基本情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-18T10:00:02",
+      "content": "一、房地产开发投资完成情况 1—4月份，全国房地产开发投资23969亿元，同比下降13.7%（按可比口径计算，详见附注5）；其中，住宅投资18464亿元，下降13.1%。 1—4月份，房地产开发企业房屋施工面积545116万平方米，同比下降12.1%。其中，住宅施工面积378005万平方米，下降12.5%。房屋新开工面积13900万...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+      "title": "2026年1—4月份社会消费品零售总额增长1.9%",
+      "original_title": "2026年1—4月份社会消费品零售总额增长1.9%",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-18T10:00:01",
+      "content": "1—4月份，社会消费品零售总额164941亿元，同比增长1.9%。其中，除汽车以外的消费品零售额152053亿元，增长3.1%。4月份，社会消费品零售总额37247亿元，同比增长0.2%。其中，除汽车以外的消费品零售额34218亿元，增长1.8%。 按经营单位所在地分，1—4月份，城镇消费品零售额142921亿元，同比增长1.8%；乡村消...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+      "title": "2026年4月份能源生产情况",
+      "original_title": "2026年4月份能源生产情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-18T10:00:00",
+      "content": "4月份，规模以上工业（以下简称规上工业）原煤生产保持较高水平，原油、电力生产增速加快，天然气生产平稳增长。 一、原煤、原油和天然气生产及相关情况 原煤生产保持较高水平。4月份，规上工业原煤产量3.9亿吨，同比下降1.0%，3月份为同比持平；日均产量1285万吨。 1—4月份，规上工业原煤产量15.8...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [
+          "2026年4月份能源"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "全球市场",
+        "原油",
+        "市场数据"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+      "title": "2026年4月份70个大中城市商品住宅销售价格变动情况",
+      "original_title": "2026年4月份70个大中城市商品住宅销售价格变动情况",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+      "original_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+      "url_status": "ok",
+      "publish_time": "2026-05-18T09:30:01",
+      "content": "表1：2026年4月70个大中城市新建商品住宅销售价格指数 城市环比同比1-4月平均城市环比同比1-4月平均上月=100上年同月=100上年同期=100上月=100上年同月=100上年同期=100北 京99.897.797.7唐 山99.593.893.8天 津100.094.995.5秦 皇 岛99.594.694.8石 家 庄99.895.395.5包 头99.792.792.7太 原100.297.89...",
+      "source": "国家统计局最新发布",
+      "source_id": "stats_latest",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局最新发布RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 75,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+      "title": "国家统计局城市司首席统计师董莉娟解读2026年5月份CPI和PPI数据",
+      "original_title": "国家统计局城市司首席统计师董莉娟解读2026年5月份CPI和PPI数据",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-10T09:30:00",
+      "content": "2026年5月份CPI总体平稳 PPI继续上涨 ——国家统计局城市司首席统计师董莉娟解读2026年5月份CPI和PPI数据 5月份，居民消费市场运行总体平稳，居民消费价格指数（CPI）环比下降0.1%，同比上涨1.2%，扣除食品和能源价格的核心CPI同比上涨1.1%。受国内部分行业需求增加以及国际大宗商品价格波动传导等因素影响，工业...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [
+          "扣除食品和能源"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "全球市场",
+        "统计局",
+        "CPI",
+        "PPI",
+        "市场数据"
+      ],
+      "heat_score": 85,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+      "title": "居民收支稳步增长 人民生活持续改善——“十四五”经济社会发展成就系列报告之十五",
+      "original_title": "居民收支稳步增长 人民生活持续改善——“十四五”经济社会发展成就系列报告之十五",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-05T03:00:02",
+      "content": "“十四五”时期，在以习近平同志为核心的党中央坚强领导下，各地区各部门深入贯彻以人民为中心的发展思想，始终将保障和改善民生作为工作的根本出发点和落脚点，出台并实施了一系列惠民富民政策，居民收入较快增长，收入结构持续优化，城乡和地区间居民收入差距不断缩小，居民消费水平持续提升，生活质量稳步改善。...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+      "title": "能源转型跨越发展 绿色低碳成效显著——“十四五”经济社会发展成就系列报告之十四",
+      "original_title": "能源转型跨越发展 绿色低碳成效显著——“十四五”经济社会发展成就系列报告之十四",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-05T03:00:01",
+      "content": "“十四五”时期，在以习近平同志为核心的党中央坚强领导下，我国深入实施“四个革命、一个合作”能源安全新战略，统筹发展和安全，协同推进能源保供与绿色低碳转型。能源安全保障坚实有力，能效水平显著提升，能源结构优化加快，国际合作纵深拓展，清洁低碳、安全高效的现代能源体系建设取得重大阶段性成果，为经济...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [
+          "协同推进能源",
+          "安全高效的现代能源"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+      "title": "固定资产投资结构不断优化 有效投资带动作用持续发挥——“十四五”经济社会发展成就系列报告之十三",
+      "original_title": "固定资产投资结构不断优化 有效投资带动作用持续发挥——“十四五”经济社会发展成就系列报告之十三",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-05T03:00:00",
+      "content": "“十四五”时期，在以习近平同志为核心的党中央坚强领导下，各地区各部门深入贯彻落实党中央、国务院决策部署，准确把握新发展阶段，全面贯彻新发展理念，加快构建新发展格局，积极扩大有效投资，全国固定资产投资保持较高规模，结构持续优化、效能稳步提升，惠民生、补短板、增动能成效显著，在优化供给结构中持续...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+      "title": "消费市场扩容升级 商贸流通焕新提质——“十四五”经济社会发展成就系列报告之十二",
+      "original_title": "消费市场扩容升级 商贸流通焕新提质——“十四五”经济社会发展成就系列报告之十二",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-04T03:00:04",
+      "content": "“十四五”时期，在以习近平同志为核心的党中央坚强领导下，各地区各部门深入实施扩大内需战略，审时度势推出全面促进消费系列政策措施，统筹促消费与惠民生、优供给与扩需求，推进开展提振消费专项行动，消费市场规模不断扩大，消费结构持续优化，商贸流通体系日益完善，运行效率稳步提升。 一、消费市场稳步...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+      "title": "服务业经济稳中向好 发展动能持续增强——“十四五”经济社会发展成就系列报告之十一",
+      "original_title": "服务业经济稳中向好 发展动能持续增强——“十四五”经济社会发展成就系列报告之十一",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-04T03:00:03",
+      "content": "“十四五”时期，以习近平同志为核心的党中央高度重视服务业发展，围绕促进服务业优质高效发展、培育服务新业态新模式、扩大服务业对外开放、推进产业融合发展等出台一系列政策措施，服务业呈现规模稳步扩大、质效持续提升、新动能蓬勃发展的良好局面。 一、服务业保持较快增长，支撑作用更加彰显 （一）...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+      "title": "新型工业化迈出坚实步伐 新质生产力积蓄强劲动力——“十四五”经济社会发展成就系列报告之十",
+      "original_title": "新型工业化迈出坚实步伐 新质生产力积蓄强劲动力——“十四五”经济社会发展成就系列报告之十",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-04T03:00:02",
+      "content": "以中国式现代化全面推进强国建设、民族复兴伟业，实现新型工业化是关键任务。“十四五”时期，面对国内外经济环境的复杂变化，在以习近平同志为核心的党中央坚强领导下，我国工业经济顶压前行、向新向优，新型工业化进程和制造强国建设迈出坚实步伐、取得瞩目成就，工业领域新质生产力加速培育，呈现智能化、绿色化...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+      "title": "农业强国建设加快推进 乡村全面振兴阔步前行——“十四五”经济社会发展成就系列报告之九",
+      "original_title": "农业强国建设加快推进 乡村全面振兴阔步前行——“十四五”经济社会发展成就系列报告之九",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-04T03:00:01",
+      "content": "“十四五”时期，以习近平同志为核心的党中央坚持把解决好“三农”问题作为全党工作的重中之重，坚持农业农村优先发展，各地区各部门坚决贯彻落实党中央、国务院关于“三农”工作的决策部署，锚定建设农业强国目标，有力有效推进乡村全面振兴，加快农业农村现代化，推动农业农村发展稳中向好、稳中提质，为经济社会...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+      "title": "高水平对外开放全面推进 贸易强国建设巩固提升——“十四五”经济社会发展成就系列报告之八",
+      "original_title": "高水平对外开放全面推进 贸易强国建设巩固提升——“十四五”经济社会发展成就系列报告之八",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-03T03:00:03",
+      "content": "“十四五”时期，国际经济秩序和治理体系面临严重冲击，单边主义、保护主义抬头。面对错综复杂的国际形势，在以习近平同志为核心的党中央坚强领导下，我国高水平对外开放全面推进，贸易强国建设取得显著进展。五年来，我国货物贸易规模始终稳居全球第一，服务贸易快速增长，利用外资结构优化，对外投资有序推进，开...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+      "title": "生态环境持续改善 美丽中国建设全面推进——“十四五”经济社会发展成就系列报告之七",
+      "original_title": "生态环境持续改善 美丽中国建设全面推进——“十四五”经济社会发展成就系列报告之七",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-03T03:00:02",
+      "content": "“十四五”时期，以习近平同志为核心的党中央坚定不移推进生态文明建设，作出一系列重大部署，全面推动美丽中国建设迈出重大步伐。五年来，我国生态文明制度体系持续完善，生态保护修复扎实推进，自然生态状况明显改善，污染防治攻坚战取得新成效，绿色低碳加快发展，人居环境显著提升，生态文明建设取得历史性成就...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+      "title": "新型城镇化建设深入推进 城市高质量发展成效显著——“十四五”经济社会发展成就系列报告之六",
+      "original_title": "新型城镇化建设深入推进 城市高质量发展成效显著——“十四五”经济社会发展成就系列报告之六",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-03T03:00:01",
+      "content": "“十四五”时期，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央、国务院决策部署，坚持人民城市人民建、人民城市为人民，以建设现代化人民城市为目标，大力推动城市结构优化、动能转换、品质提升、绿色转型、文脉赓续和治理增效，城市各领域发展取得显著成效，新型城镇化建设深入推进，...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+      "title": "经济结构不断优化 发展协调性持续增强——“十四五”经济社会发展成就系列报告之五",
+      "original_title": "经济结构不断优化 发展协调性持续增强——“十四五”经济社会发展成就系列报告之五",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-03T03:00:00",
+      "content": "“十四五”时期，在以习近平同志为核心的党中央坚强领导下，各地区各部门深入贯彻新发展理念，加快构建新发展格局，推动经济结构调整和转型升级，我国经济结构调整取得新进展，产业结构持续优化，需求结构不断升级，区域协调发展稳步推进，宏观收入分配结构不断改善，经济发展协调性显著增强。 一、产业结构不...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+      "title": "创新动能稳步提升 科技强国夯基垒台——“十四五”经济社会发展成就系列报告之四",
+      "original_title": "创新动能稳步提升 科技强国夯基垒台——“十四五”经济社会发展成就系列报告之四",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-02T03:00:03",
+      "content": "“十四五”是我国科技事业发展进程中具有里程碑意义的五年。各地区各部门深入实施创新驱动发展战略，推动我国科技实力显著增强，国家创新体系整体效能显著提升，科技创新成为支撑我国高质量发展的关键要素和重要引擎。 一、科技体制机制改革纵深推进，创新生态全面优化 （一）科技创新政策支持体系更加...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [
+          "是我国科技",
+          "推动我国科技"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+      "title": "综合国力显著提升 国际影响力日益增强——“十四五”经济社会发展成就系列报告之三",
+      "original_title": "综合国力显著提升 国际影响力日益增强——“十四五”经济社会发展成就系列报告之三",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-02T03:00:02",
+      "content": "“十四五”时期，面对全球经济增长乏力、地缘政治冲突不断、贸易保护主义抬头等多重挑战，在以习近平同志为核心的党中央坚强领导下，各地区各部门以习近平新时代中国特色社会主义思想为指导，坚持稳中求进工作总基调，完整、准确、全面贯彻新发展理念，加快构建新发展格局，推动高质量发展，我国经济社会发展取得历...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html",
+      "title": "创新驱动提质增效 发展动能焕新升级——“十四五”经济社会发展成就系列报告之二",
+      "original_title": "创新驱动提质增效 发展动能焕新升级——“十四五”经济社会发展成就系列报告之二",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html",
+      "original_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html",
+      "canonical_url": "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html",
+      "url_status": "ok",
+      "publish_time": "2026-06-02T03:00:01",
+      "content": "“十四五”时期是我国深入实施创新驱动发展战略、加快实现高水平科技自立自强的关键五年。面对全球科技革命和产业变革的时代浪潮，我国坚持创新在现代化建设全局中的核心地位，深入实施创新驱动发展战略，强化国家战略科技力量，提升国家创新体系整体效能，推动科技实力从点的突破迈向系统能力提升、创新动能从规模积累...",
+      "source": "国家统计局数据解读",
+      "source_id": "stats_interpretation",
+      "source_type": "官方数据",
+      "collect_method": "rss",
+      "source_note": "国家统计局数据解读RSS原文链接采集",
+      "category": {
+        "event_type": "市场数据",
+        "industry": "全球市场",
+        "market": "宏观数据"
+      },
+      "entities": {
+        "companies": [
+          "加快实现高水平科技",
+          "面对全球科技",
+          "强化国家战略科技",
+          "推动科技"
+        ],
+        "people": [],
+        "amount": ""
+      },
+      "sentiment": "neutral",
+      "tags": [
+        "宏观数据",
+        "国家统计局",
+        "市场数据",
+        "全球市场"
+      ],
+      "heat_score": 74,
+      "crawl_time": "2026-06-14T23:35:32.443269"
+    }
+  ],
+  "topics": [
+    {
+      "_id": "topic_宏观数据",
+      "topic_name": "宏观数据",
+      "keywords": [
+        "宏观数据"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html"
+      ],
+      "news_count": 30,
+      "heat_trend": "↑",
+      "related_companies": [
+        "2026年4月份能源",
+        "扣除食品和能源",
+        "协同推进能源",
+        "安全高效的现代能源",
+        "是我国科技",
+        "推动我国科技"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_国家统计局",
+      "topic_name": "国家统计局",
+      "keywords": [
+        "国家统计局"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html"
+      ],
+      "news_count": 30,
+      "heat_trend": "↑",
+      "related_companies": [
+        "2026年4月份能源",
+        "扣除食品和能源",
+        "协同推进能源",
+        "安全高效的现代能源",
+        "是我国科技",
+        "推动我国科技"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_市场数据",
+      "topic_name": "市场数据",
+      "keywords": [
+        "市场数据"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html"
+      ],
+      "news_count": 30,
+      "heat_trend": "↑",
+      "related_companies": [
+        "2026年4月份能源",
+        "扣除食品和能源",
+        "协同推进能源",
+        "安全高效的现代能源",
+        "是我国科技",
+        "推动我国科技"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_全球市场",
+      "topic_name": "全球市场",
+      "keywords": [
+        "全球市场"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260612_1963938.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963923.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260610_1963922.html",
+        "https://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260527_1963808.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963786.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963731.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963730.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963729.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963727.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963715.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963891.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963892.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963893.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963886.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963887.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963888.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260604_1963889.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963865.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963866.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963868.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260603_1963869.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963861.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963862.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260602_1963863.html"
+      ],
+      "news_count": 30,
+      "heat_trend": "↑",
+      "related_companies": [
+        "2026年4月份能源",
+        "扣除食品和能源",
+        "协同推进能源",
+        "安全高效的现代能源",
+        "是我国科技",
+        "推动我国科技"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_半导体",
+      "topic_name": "半导体",
+      "keywords": [
+        "半导体"
+      ],
+      "related_news_ids": [
+        "demo-1",
+        "demo-2",
+        "demo-7",
+        "demo-8"
+      ],
+      "news_count": 4,
+      "heat_trend": "↑",
+      "related_companies": [
+        "AI芯片公司",
+        "某AI芯片公司",
+        "投资方包括产业基金与一线美元基金",
+        "多家券商上调半导体",
+        "消费电子公司",
+        "产业资本并购半导体材料公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_统计局",
+      "topic_name": "统计局",
+      "keywords": [
+        "统计局"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260522_1963788.html",
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963732.html",
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html"
+      ],
+      "news_count": 4,
+      "heat_trend": "↑",
+      "related_companies": [
+        "扣除食品和能源"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_AI应用",
+      "topic_name": "AI应用",
+      "keywords": [
+        "AI应用"
+      ],
+      "related_news_ids": [
+        "demo-1",
+        "demo-6",
+        "demo-7"
+      ],
+      "news_count": 3,
+      "heat_trend": "↑",
+      "related_companies": [
+        "AI芯片公司",
+        "某AI芯片公司",
+        "投资方包括产业基金与一线美元基金",
+        "港股科技",
+        "消费电子公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_产品发布",
+      "topic_name": "产品发布",
+      "keywords": [
+        "产品发布"
+      ],
+      "related_news_ids": [
+        "demo-3",
+        "demo-6",
+        "demo-7"
+      ],
+      "news_count": 3,
+      "heat_trend": "↑",
+      "related_companies": [
+        "机器人产业链公司",
+        "港股科技",
+        "消费电子公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_芯片",
+      "topic_name": "芯片",
+      "keywords": [
+        "芯片"
+      ],
+      "related_news_ids": [
+        "demo-1",
+        "demo-7"
+      ],
+      "news_count": 2,
+      "heat_trend": "↑",
+      "related_companies": [
+        "AI芯片公司",
+        "某AI芯片公司",
+        "投资方包括产业基金与一线美元基金",
+        "消费电子公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_市场动态",
+      "topic_name": "市场动态",
+      "keywords": [
+        "市场动态"
+      ],
+      "related_news_ids": [
+        "demo-2",
+        "demo-9"
+      ],
+      "news_count": 2,
+      "heat_trend": "↑",
+      "related_companies": [
+        "多家券商上调半导体"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_机器人",
+      "topic_name": "机器人",
+      "keywords": [
+        "机器人"
+      ],
+      "related_news_ids": [
+        "demo-3",
+        "demo-9"
+      ],
+      "news_count": 2,
+      "heat_trend": "↑",
+      "related_companies": [
+        "机器人产业链公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_人形机器人",
+      "topic_name": "人形机器人",
+      "keywords": [
+        "人形机器人"
+      ],
+      "related_news_ids": [
+        "demo-3",
+        "demo-9"
+      ],
+      "news_count": 2,
+      "heat_trend": "↑",
+      "related_companies": [
+        "机器人产业链公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_政策监管",
+      "topic_name": "政策监管",
+      "keywords": [
+        "政策监管"
+      ],
+      "related_news_ids": [
+        "demo-4",
+        "demo-10"
+      ],
+      "news_count": 2,
+      "heat_trend": "↑",
+      "related_companies": [],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_其他",
+      "topic_name": "其他",
+      "keywords": [
+        "其他"
+      ],
+      "related_news_ids": [
+        "demo-5",
+        "demo-10"
+      ],
+      "news_count": 2,
+      "heat_trend": "↑",
+      "related_companies": [],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_大模型",
+      "topic_name": "大模型",
+      "keywords": [
+        "大模型"
+      ],
+      "related_news_ids": [
+        "demo-6",
+        "demo-7"
+      ],
+      "news_count": 2,
+      "heat_trend": "↑",
+      "related_companies": [
+        "港股科技",
+        "消费电子公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_推理",
+      "topic_name": "推理",
+      "keywords": [
+        "推理"
+      ],
+      "related_news_ids": [
+        "demo-1"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "AI芯片公司",
+        "某AI芯片公司",
+        "投资方包括产业基金与一线美元基金"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_融资",
+      "topic_name": "融资",
+      "keywords": [
+        "融资"
+      ],
+      "related_news_ids": [
+        "demo-1"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "AI芯片公司",
+        "某AI芯片公司",
+        "投资方包括产业基金与一线美元基金"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_B轮",
+      "topic_name": "B轮",
+      "keywords": [
+        "B轮"
+      ],
+      "related_news_ids": [
+        "demo-1"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "AI芯片公司",
+        "某AI芯片公司",
+        "投资方包括产业基金与一线美元基金"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_晶圆",
+      "topic_name": "晶圆",
+      "keywords": [
+        "晶圆"
+      ],
+      "related_news_ids": [
+        "demo-2"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "多家券商上调半导体"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_光刻",
+      "topic_name": "光刻",
+      "keywords": [
+        "光刻"
+      ],
+      "related_news_ids": [
+        "demo-2"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "多家券商上调半导体"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_具身智能",
+      "topic_name": "具身智能",
+      "keywords": [
+        "具身智能"
+      ],
+      "related_news_ids": [
+        "demo-3"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "机器人产业链公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_工业机器人",
+      "topic_name": "工业机器人",
+      "keywords": [
+        "工业机器人"
+      ],
+      "related_news_ids": [
+        "demo-3"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "机器人产业链公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_IPO",
+      "topic_name": "IPO",
+      "keywords": [
+        "IPO"
+      ],
+      "related_news_ids": [
+        "demo-4"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_财报业绩",
+      "topic_name": "财报业绩",
+      "keywords": [
+        "财报业绩"
+      ],
+      "related_news_ids": [
+        "demo-5"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_融资并购",
+      "topic_name": "融资并购",
+      "keywords": [
+        "融资并购"
+      ],
+      "related_news_ids": [
+        "demo-8"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "产业资本并购半导体材料公司"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_PMI",
+      "topic_name": "PMI",
+      "keywords": [
+        "PMI"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_原油",
+      "topic_name": "原油",
+      "keywords": [
+        "原油"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/zxfb/202605/t20260518_1963725.html"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "2026年4月份能源"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_CPI",
+      "topic_name": "CPI",
+      "keywords": [
+        "CPI"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "扣除食品和能源"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    },
+    {
+      "_id": "topic_PPI",
+      "topic_name": "PPI",
+      "keywords": [
+        "PPI"
+      ],
+      "related_news_ids": [
+        "https://www.stats.gov.cn/sj/sjjd/202606/t20260610_1963924.html"
+      ],
+      "news_count": 1,
+      "heat_trend": "→",
+      "related_companies": [
+        "扣除食品和能源"
+      ],
+      "create_time": "2026-06-14T23:35:32.443269"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+data/reports/
+data/tmp_*.log
+data/verify_*.log
+_recovery_snapshots/
+portable_packages/
+*.db
+*.sqlite
+*.sqlite3
+data/local_store.json

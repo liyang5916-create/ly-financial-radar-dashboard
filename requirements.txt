@@ -1,0 +1,8 @@
+flask
+flask-cors
+openai
+feedparser
+requests
+beautifulsoup4
+pymongo
+redis
