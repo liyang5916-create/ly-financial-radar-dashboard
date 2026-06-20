@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>财经日报雷达 - 多标签看板</title>
+    <style>
+        :root {
+            --bg-a: #261046;
+            --bg-b: #6e3bd1;
+            --bg-c: #b58cff;
+            --panel: rgba(255,255,255,.14);
+            --panel-strong: rgba(255,255,255,.2);
+            --border: rgba(255,255,255,.22);
+            --text: #f7f3ff;
+            --muted: rgba(247,243,255,.72);
+            --ink: #1b1230;
+            --accent: #f5d36d;
+            --green: #8cf2bd;
+            --red: #ff9cae;
+            --blue: #6ec9ff;
+            --orange: #ffb86c;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Inter", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 20% 8%, rgba(218,190,255,.42), transparent 28%),
+                radial-gradient(circle at 82% 18%, rgba(111,83,220,.55), transparent 32%),
+                linear-gradient(135deg, var(--bg-a), var(--bg-b) 56%, var(--bg-c));
+        }
+        a { color: inherit; text-decoration: none; }
+
+        /* Layout */
+        .app-shell { display: flex; flex-direction: column; min-height: 100vh; }
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border);
+            background: rgba(22, 11, 44, .85);
+            backdrop-filter: blur(24px) saturate(135%);
+        }
+        .brand-small { display: flex; align-items: center; gap: 12px; }
+        .brand-small h1 { margin: 0; font-size: 20px; font-weight: 700; }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,.1);
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px var(--green); }
+        .status-badge.running .status-dot { background: var(--blue); box-shadow: 0 0 12px var(--blue); animation: pulse 1.5s ease-in-out infinite; }
+        .status-badge.error .status-dot { background: var(--red); box-shadow: 0 0 12px var(--red); }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+        .toolbar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: auto;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            height: 36px;
+            padding: 0 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,.24);
+            background: rgba(255,255,255,.14);
+            color: var(--text);
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn:hover { background: rgba(255,255,255,.22); transform: translateY(-1px); }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn.primary { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+        .btn.primary:hover { background: #d4a356; }
+        .btn.success { background: var(--green); color: var(--ink); border-color: var(--green); }
+        .btn.danger { background: var(--red); color: var(--ink); border-color: var(--red); }
+
+        /* Tabs */
+        .tabs-bar {
+            display: flex;
+            gap: 4px;
+            padding: 0 24px;
+            border-bottom: 1px solid var(--border);
+            background: rgba(22, 11, 44, .6);
+        }
+        .tab-btn {
+            padding: 14px 20px;
+            border: 0;
+            background: transparent;
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .tab-btn:hover { color: var(--text); background: rgba(255,255,255,.08); }
+        .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+        /* Main Content */
+        .main-content { flex: 1; padding: 24px; overflow: auto; }
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+
+        /* Panels */
+        .panel {
+            border: 1px solid var(--border);
+            background: var(--panel);
+            border-radius: 12px;
+            box-shadow: 0 20px 55px rgba(15, 5, 35, .18);
+            backdrop-filter: blur(22px) saturate(135%);
+            margin-bottom: 20px;
+        }
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+            padding: 18px 20px;
+            border-bottom: 1px solid rgba(255,255,255,.16);
+        }
+        .panel-body { padding: 20px; }
+        .panel-title { margin: 0; font-size: 18px; font-weight: 700; }
+        .panel-subtitle { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+
+        /* Metrics Grid */
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+        .metric-card {
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,.18);
+            background: rgba(255,255,255,.12);
+        }
+        .metric-value { display: block; font-size: 32px; font-weight: 700; margin-bottom: 6px; color: var(--accent); }
+        .metric-label { display: block; color: var(--muted); font-size: 13px; }
+
+        /* Summary Box */
+        .summary-box {
+            padding: 18px;
+            border-radius: 10px;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.14);
+            line-height: 1.6;
+        }
+        .summary-box h3 { margin: 0 0 12px; font-size: 16px; }
+        .summary-box p { margin: 8px 0; color: var(--muted); }
+
+        /* Chapter List */
+        .chapter-list { display: grid; gap: 12px; }
+        .chapter {
+            border: 1px solid rgba(255,255,255,.16);
+            background: rgba(255,255,255,.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .chapter-toggle {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 18px;
+            border: 0;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            text-align: left;
+        }
+        .chapter-toggle:hover { background: rgba(255,255,255,.05); }
+        .chapter-title { font-size: 15px; font-weight: 700; }
+        .chapter-subtitle { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
+        .chapter-detail { display: none; padding: 0 18px 18px; color: rgba(255,255,255,.82); line-height: 1.6; }
+        .chapter.open .chapter-detail { display: grid; gap: 12px; }
+        .chapter.open .chapter-toggle { background: rgba(255,255,255,.08); }
+
+        /* Table */
+        .table-wrap { overflow: auto; border-radius: 10px; border: 1px solid rgba(255,255,255,.16); }
+        table { width: 100%; border-collapse: collapse; min-width: 1080px; background: rgba(255,255,255,.08); }
+        th, td { padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,.12); text-align: left; vertical-align: top; font-size: 13px; }
+        th { color: rgba(255,255,255,.7); font-weight: 700; background: rgba(255,255,255,.08); }
+        .article-title { max-width: 360px; line-height: 1.45; font-weight: 600; }
+
+        /* Tags & Badges */
+        .tag, .importance, .link-btn {
+            display: inline-flex;
+            align-items: center;
+            min-height: 24px;
+            padding: 4px 10px;
+            border-radius: 7px;
+            border: 1px solid rgba(255,255,255,.2);
+            background: rgba(255,255,255,.12);
+            font-size: 12px;
+            margin: 2px;
+            text-decoration: none;
+        }
+        .importance { background: rgba(245,211,109,.22); color: #fff3b0; border-color: rgba(245,211,109,.4); }
+        .importance.mid { background: rgba(140,242,189,.16); color: #c8ffe0; border-color: rgba(140,242,189,.3); }
+        .importance.low { background: rgba(255,255,255,.1); color: rgba(255,255,255,.68); }
+        .link-btn { color: #fff; cursor: pointer; }
+        .link-btn:hover { background: rgba(255,255,255,.2); }
+        .link-btn.missing { color: rgba(255,255,255,.55); cursor: not-allowed; }
+
+        /* Filters */
+        .filters { display: grid; grid-template-columns: 1fr 200px 200px; gap: 12px; margin-bottom: 16px; }
+        .field, .select {
+            width: 100%;
+            height: 38px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,.2);
+            background: rgba(255,255,255,.14);
+            color: #fff;
+            padding: 0 12px;
+            font-size: 13px;
+        }
+        .select option { color: #1b1230; }
+        .field::placeholder { color: rgba(255,255,255,.5); }
+
+        /* Report Preview */
+        .report-preview {
+            white-space: pre-wrap;
+            min-height: 200px;
+            margin: 0;
+            padding: 18px;
+            border-radius: 10px;
+            background: rgba(15,5,35,.28);
+            border: 1px solid rgba(255,255,255,.14);
+            color: rgba(255,255,255,.86);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .empty { padding: 40px 20px; text-align: center; color: var(--muted); }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+            .filters { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 640px) {
+            .topbar { flex-wrap: wrap; padding: 12px 16px; }
+            .toolbar { width: 100%; justify-content: flex-start; }
+            .main-content { padding: 16px; }
+            .metrics-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-shell">
+        <!-- 顶部操作栏 -->
+        <header class="topbar">
+            <div class="brand-small">
+                <h1>财经日报雷达</h1>
+            </div>
+            <div class="status-badge" id="statusBadge">
+                <span class="status-dot"></span>
+                <span id="statusText">连接中...</span>
+            </div>
+            <div class="toolbar">
+                <button class="btn success" id="startBtn" onclick="startSystem()">
+                    <span>▶</span>开始运行
+                </button>
+                <button class="btn danger" id="stopBtn" onclick="stopSystem()" disabled>
+                    <span>■</span>停止
+                </button>
+                <button class="btn primary" onclick="startCrawl()">
+                    <span>↻</span>立即抓取
+                </button>
+                <button class="btn" onclick="runAnalysis()">
+                    <span>✦</span>AI 分析
+                </button>
+                <button class="btn" onclick="refreshAll()">
+                    <span>⟳</span>刷新
+                </button>
+            </div>
+        </header>
+
+        <!-- 标签页导航 -->
+        <nav class="tabs-bar">
+            <button class="tab-btn active" onclick="switchTab('overview')">今日概览</button>
+            <button class="tab-btn" onclick="switchTab('chapters')">章节分析</button>
+            <button class="tab-btn" onclick="switchTab('articles')">文章明细</button>
+            <button class="tab-btn" onclick="switchTab('report')">日报生成</button>
+        </nav>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <!-- 标签页1: 今日概览 -->
+            <div class="tab-panel active" id="tab-overview">
+                <!-- 关键指标 -->
+                <section class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">今日关键指标</h2>
+                            <p class="panel-subtitle">实时数据概览</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <strong class="metric-value" id="totalNews">0</strong>
+                                <span class="metric-label">总线索数</span>
+                            </div>
+                            <div class="metric-card">
+                                <strong class="metric-value" id="recentNews">0</strong>
+                                <span class="metric-label">近 24 小时</span>
+                            </div>
+                            <div class="metric-card">
+                                <strong class="metric-value" id="topicCount">0</strong>
+                                <span class="metric-label">共性话题</span>
+                            </div>
+                            <div class="metric-card">
+                                <strong class="metric-value" id="sourceCount">0</strong>
+                                <span class="metric-label">活跃来源</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 今日综合判断 -->
+                <section class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">今日综合判断</h2>
+                            <p class="panel-subtitle">AI 自动生成的核心要点和趋势判断</p>
+                        </div>
+                        <button class="btn primary" onclick="generateSummary()">生成摘要</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="summary-box" id="todaySummary">
+                            <p>点击"生成摘要"按钮，AI 将分析今日所有线索并生成综合判断。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 重点关注 -->
+                <section class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">重点关注事件</h2>
+                            <p class="panel-subtitle">高优先级新闻 Top 10</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div id="topNewsList" class="chapter-list">
+                            <div class="empty">暂无高优先级事件</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 标签页2: 章节分析 -->
+            <div class="tab-panel" id="tab-chapters">
+                <section class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">六大章节分析</h2>
+                            <p class="panel-subtitle">核心变化 / 关键事件 / 影响判断 / 后续关注</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="chapter-list" id="chapterAnalysisList">
+                            <div class="empty">正在加载章节分析...</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 标签页3: 文章明细 -->
+            <div class="tab-panel" id="tab-articles">
+                <section class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">文章明细与原文溯源</h2>
+                            <p class="panel-subtitle" id="resultSummary">正在读取结果...</p>
+                        </div>
+                        <div>
+                            <button class="btn" onclick="downloadExport('csv')">下载 CSV</button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="filters">
+                            <input class="field" id="searchInput" placeholder="搜索标题、关键词、公司..." oninput="renderNews()">
+                            <select class="select" id="eventFilter" onchange="loadNews()">
+                                <option value="">全部类型</option>
+                            </select>
+                            <select class="select" id="industryFilter" onchange="loadNews()">
+                                <option value="">全部方向</option>
+                            </select>
+                        </div>
+                        <div id="newsList" class="table-wrap">
+                            <div class="empty">暂无数据</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 标签页4: 日报生成 -->
+            <div class="tab-panel" id="tab-report">
+                <section class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">日报预览与生成</h2>
+                            <p class="panel-subtitle">生成结构化 Markdown 报告</p>
+                        </div>
+                        <div>
+                            <button class="btn primary" onclick="generateReport()">生成并保存</button>
+                            <button class="btn" onclick="downloadExport('report')">下载报告</button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <pre class="report-preview" id="reportPreview">点击"生成并保存"查看今日结构化摘要。</pre>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const API_BASE = location.protocol === 'file:' ? 'http://127.0.0.1:5000' : '';
+        const state = {
+            config: null,
+            dashboard: null,
+            news: [],
+            visibleNews: [],
+            openChapter: 'global',
+            currentTab: 'overview',
+            isRunning: false
+        };
+
+        const chapters = [
+            { id: 'ai', title: 'AI 应用 / AI Agent', subtitle: '落地场景、融资、企业付费', keywords: ['AI', '大模型', 'Agent', '算力'], follow: ['付费客户与续费率', '企业级产品发布', '头部平台生态变化'] },
+            { id: 'semi', title: '半导体与 PCB', subtitle: '订单、报价、设备材料', keywords: ['半导体', 'PCB', '芯片', '晶圆', '封装'], follow: ['服务器链订单', 'PCB/覆铜板价格', '设备材料国产替代'] },
+            { id: 'robot', title: '具身智能与机器人', subtitle: '产品、零部件、合作', keywords: ['机器人', '具身智能', '人形机器人'], follow: ['量产计划', '零部件订单', '战略合作'] },
+            { id: 'ipo', title: 'IPO 与 A 股科技', subtitle: '审核、政策、风险偏好', keywords: ['IPO', '上市', '过会', 'A股', '科创'], follow: ['交易所审核动态', '监管规则变化', '科技板块成交'] },
+            { id: 'hk', title: '港股科技板块', subtitle: '估值、资金、映射', keywords: ['港股', '恒生科技', '南向'], follow: ['南向资金', '平台公司业绩', 'A/H 科技映射'] },
+            { id: 'global', title: '全球市场与宏观变量', subtitle: '统计局、美元、美股科技', keywords: ['统计局', 'CPI', 'PPI', 'PMI', '美元', '美股', '黄金', '原油'], follow: ['国家统计局数据发布', 'CPI/PPI/PMI', '人民币汇率', '美元与美债'] },
+        ];
+
+        window.addEventListener('load', () => {
+            refreshAll();
+        });
+
+        // API 请求封装
+        async function api(path, options = {}) {
+            try {
+                const response = await fetch(`${API_BASE}${path}`, options);
+                const data = await response.json();
+                if (!response.ok || data.success === false) throw new Error(data.error || `HTTP ${response.status}`);
+                return data;
+            } catch (error) {
+                console.error('API Error:', error);
+                throw error;
+            }
+        }
+
+        // 标签页切换
+        function switchTab(tabId) {
+            state.currentTab = tabId;
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+            event.target.classList.add('active');
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+        }
+
+        // 刷新所有数据
+        async function refreshAll() {
+            try {
+                await loadConfig();
+                await Promise.all([loadDashboard(), loadNews()]);
+                setStatus('idle', '后端已连接');
+            } catch (error) {
+                setStatus('error', '连接失败');
+                console.error('Refresh failed:', error);
+            }
+        }
+
+        // 加载配置
+        async function loadConfig() {
+            const res = await api('/api/config');
+            state.config = res.data;
+            document.getElementById('eventFilter').innerHTML = '<option value="">全部类型</option>' +
+                (res.data.event_types || []).map(item => `<option value="${escapeAttr(item)}">${escapeHtml(item)}</option>`).join('');
+            document.getElementById('industryFilter').innerHTML = '<option value="">全部方向</option>' +
+                (res.data.monitor_topics || []).map(item => `<option value="${escapeAttr(item.name)}">${escapeHtml(item.name)}</option>`).join('');
+        }
+
+        // 加载仪表盘数据
+        async function loadDashboard() {
+            const res = await api('/api/dashboard');
+            state.dashboard = res.data;
+            document.getElementById('totalNews').textContent = res.data.total_news || 0;
+            document.getElementById('recentNews').textContent = res.data.recent_24h || 0;
+            document.getElementById('topicCount').textContent = res.data.topics_count || 0;
+
+            const summary = res.data.summary || {};
+            document.getElementById('sourceCount').textContent = Object.keys(summary.platform_counts || {}).length;
+            document.getElementById('resultSummary').textContent =
+                `已归并 ${summary.total || 0} 条线索，覆盖 ${Object.keys(summary.platform_counts || {}).length} 个来源`;
+        }
+
+        // 加载新闻列表
+        async function loadNews() {
+            const params = new URLSearchParams({ per_page: '200' });
+            const eventType = document.getElementById('eventFilter')?.value || '';
+            const industry = document.getElementById('industryFilter')?.value || '';
+            if (eventType) params.set('event_type', eventType);
+            if (industry) params.set('industry', industry);
+
+            const res = await api(`/api/news?${params.toString()}`);
+            state.news = res.data.news || [];
+            renderNews();
+            renderChapterAnalysis();
+            renderTopNews();
+        }
+
+        // 渲染新闻列表
+        function renderNews() {
+            const keyword = (document.getElementById('searchInput')?.value || '').trim().toLowerCase();
+            state.visibleNews = state.news.filter(item => {
+                if (!keyword) return true;
+                return [item.title, item.source, item.content, item.category?.event_type, item.category?.industry, ...(item.tags || [])]
+                    .join(' ').toLowerCase().includes(keyword);
+            });
+
+            if (!state.visibleNews.length) {
+                document.getElementById('newsList').innerHTML = '<div class="empty">暂无匹配新闻</div>';
+                return;
+            }
+
+            const rows = state.visibleNews.map(item => {
+                const category = item.category || {};
+                const companies = item.entities?.companies || [];
+                const importance = getImportance(item);
+                const hasUrl = item.url && !item.is_demo && !String(item.url).includes('example.com');
+                return `<tr>
+                    <td>${formatDateTime(item.publish_time)}</td>
+                    <td><strong>${escapeHtml(item.source || '未知')}</strong></td>
+                    <td><div class="article-title">${escapeHtml(item.title || '')}</div></td>
+                    <td>${escapeHtml(category.event_type || '未分类')}</td>
+                    <td>${escapeHtml(category.industry || '其他')}</td>
+                    <td>${companies.slice(0, 3).map(escapeHtml).join('、') || '未抽取'}</td>
+                    <td><span class="importance ${importance.className}">${importance.label}</span></td>
+                    <td>${(item.tags || []).slice(0, 5).map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</td>
+                    <td>${hasUrl ? `<a class="link-btn" href="${escapeAttr(item.url)}" target="_blank">原文</a>` : '<span class="link-btn missing">无链接</span>'}</td>
+                </tr>`;
+            }).join('');
+
+            document.getElementById('newsList').innerHTML = `<table>
+                <thead><tr><th>时间</th><th>来源</th><th>标题</th><th>类型</th><th>赛道</th><th>公司</th><th>重要性</th><th>标签</th><th>链接</th></tr></thead>
+                <tbody>${rows}</tbody>
+            </table>`;
+        }
+
+        // 渲染重点新闻
+        function renderTopNews() {
+            const topNews = state.news
+                .filter(item => (item.heat_score || 0) >= 78)
+                .slice(0, 10);
+
+            if (!topNews.length) {
+                document.getElementById('topNewsList').innerHTML = '<div class="empty">暂无高优先级事件</div>';
+                return;
+            }
+
+            document.getElementById('topNewsList').innerHTML = topNews.map(item => `
+                <div class="chapter">
+                    <div class="chapter-toggle" style="cursor: default;">
+                        <div>
+                            <div class="chapter-title">${escapeHtml(item.title)}</div>
+                            <small class="chapter-subtitle">${escapeHtml(item.source)} · ${formatDateTime(item.publish_time)}</small>
+                        </div>
+                        <span class="importance">${getImportance(item).label}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 渲染章节分析
+        function renderChapterAnalysis() {
+            const news = state.visibleNews.length ? state.visibleNews : state.news;
+            document.getElementById('chapterAnalysisList').innerHTML = chapters.map(chapter => {
+                const matched = news.filter(item =>
+                    chapter.keywords.some(word =>
+                        [item.title, item.content, item.source, ...(item.tags || [])]
+                            .join(' ').toLowerCase().includes(String(word).toLowerCase())
+                    )
+                ).slice(0, 5);
+
+                const core = matched.length
+                    ? `今日捕捉到 ${matched.length} 条相关线索，重点关注 ${matched.map(item => item.category?.event_type).filter(Boolean).slice(0, 2).join('、') || '事件变化'}。`
+                    : '暂无高相关线索，保持监控。';
+
+                return `<article class="chapter ${state.openChapter === chapter.id ? 'open' : ''}">
+                    <button class="chapter-toggle" onclick="toggleChapter('${chapter.id}')">
+                        <div>
+                            <div class="chapter-title">${escapeHtml(chapter.title)}</div>
+                            <small class="chapter-subtitle">${escapeHtml(chapter.subtitle)}</small>
+                        </div>
+                        <span>›</span>
+                    </button>
+                    <div class="chapter-detail">
+                        <div><b>今日核心变化：</b>${escapeHtml(core)}</div>
+                        <div><b>关键事件：</b>${matched.map(item => escapeHtml(item.title)).join('；') || '暂无'}</div>
+                        <div><b>影响判断：</b>结合来源权威性、事件类型和产业链映射判断研究价值。</div>
+                        <div><b>后续关注点：</b>${chapter.follow.map(escapeHtml).join('、')}</div>
+                    </div>
+                </article>`;
+            }).join('');
+        }
+
+        // 切换章节
+        function toggleChapter(id) {
+            state.openChapter = state.openChapter === id ? '' : id;
+            renderChapterAnalysis();
+        }
+
+        // 开始系统运行
+        async function startSystem() {
+            state.isRunning = true;
+            setStatus('running', '系统运行中');
+            document.getElementById('startBtn').disabled = true;
+            document.getElementById('stopBtn').disabled = false;
+            alert('系统已启动自动抓取模式');
+        }
+
+        // 停止系统
+        function stopSystem() {
+            state.isRunning = false;
+            setStatus('idle', '系统已停止');
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('stopBtn').disabled = true;
+        }
+
+        // 开始抓取
+        async function startCrawl() {
+            try {
+                setStatus('running', '抓取中...');
+                const res = await api('/api/crawl/start', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ source_ids: [] }),
+                });
+                alert(`抓取完成：${res.data.articles_count} 条资讯`);
+                await refreshAll();
+            } catch (error) {
+                alert(`抓取失败：${error.message}`);
+                setStatus('error', '抓取失败');
+            }
+        }
+
+        // AI 分析
+        async function runAnalysis() {
+            alert('AI 分析功能开发中，将对已抓取内容进行深度分析');
+        }
+
+        // 生成摘要
+        async function generateSummary() {
+            const summaryBox = document.getElementById('todaySummary');
+            summaryBox.innerHTML = '<p>正在生成综合判断...</p>';
+
+            setTimeout(() => {
+                const total = state.news.length;
+                const highPriority = state.news.filter(item => (item.heat_score || 0) >= 78).length;
+                const topics = [...new Set(state.news.map(item => item.category?.industry).filter(Boolean))].slice(0, 5);
+
+                summaryBox.innerHTML = `
+                    <h3>📊 今日数据概览</h3>
+                    <p>• 共采集 <strong>${total}</strong> 条线索，其中高优先级 <strong>${highPriority}</strong> 条</p>
+                    <p>• 覆盖主要赛道：${topics.join('、') || '暂无'}</p>
+                    <h3>🔍 核心观察</h3>
+                    <p>• 建议优先关注高优先级事件及其产业链影响</p>
+                    <p>• 结合章节分析进行跨领域趋势判断</p>
+                `;
+            }, 800);
+        }
+
+        // 生成报告
+        async function generateReport() {
+            try {
+                document.getElementById('reportPreview').textContent = '正在生成报告...';
+                const res = await api('/api/report/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: '{}',
+                });
+                document.getElementById('reportPreview').textContent = res.data.report || '报告为空';
+            } catch (error) {
+                document.getElementById('reportPreview').textContent = `生成失败：${error.message}`;
+            }
+        }
+
+        // 下载导出
+        function downloadExport(type) {
+            window.open(`${API_BASE}/api/export?type=${encodeURIComponent(type)}`, '_blank');
+        }
+
+        // 设置状态
+        function setStatus(status, text) {
+            const badge = document.getElementById('statusBadge');
+            const statusText = document.getElementById('statusText');
+
+            badge.className = 'status-badge';
+            if (status === 'running') {
+                badge.classList.add('running');
+            } else if (status === 'error') {
+                badge.classList.add('error');
+            }
+
+            statusText.textContent = text;
+        }
+
+        // 获取重要性
+        function getImportance(item) {
+            const score = Number(item.heat_score || 0);
+            if (score >= 78) return { label: '高', className: '' };
+            if (score >= 62) return { label: '中', className: 'mid' };
+            return { label: '低', className: 'low' };
+        }
+
+        // 格式化时间
+        function formatDateTime(value) {
+            if (!value) return '--';
+            const date = new Date(value);
+            if (Number.isNaN(date.getTime())) return String(value);
+            return date.toLocaleString('zh-CN', {
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        // HTML 转义
+        function escapeHtml(value) {
+            return String(value ?? '')
+                .replace(/[&<>"']/g, char => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;'
+                })[char]);
+        }
+
+        function escapeAttr(value) {
+            return escapeHtml(value).replace(/`/g, '&#96;');
+        }
+    </script>
+</body>
+</html>
