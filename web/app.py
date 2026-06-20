@@ -166,6 +166,12 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/tabs")
+def index_tabs():
+    """多标签页看板"""
+    return render_template("index_tabs.html")
+
+
 @app.route("/api/config")
 def config_api():
     fetch_ai = FetchAIAssistant()
