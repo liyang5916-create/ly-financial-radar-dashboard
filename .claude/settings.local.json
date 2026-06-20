@@ -4,7 +4,20 @@
       "PowerShell(Start-Process -FilePath \"cmd.exe\" -ArgumentList \"/c run_web.bat\" -WorkingDirectory $PWD)",
       "PowerShell(git *)",
       "PowerShell(git status *)",
-      "PowerShell(git init *)"
+      "PowerShell(git init *)",
+      "PowerShell(git commit *)",
+      "PowerShell(git config *)",
+      "PowerShell(git remote *)",
+      "PowerShell(git branch *)",
+      "PowerShell(git push *)",
+      "PowerShell(git add *)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); python web/app.py)",
+      "PowerShell(Test-NetConnection *)",
+      "PowerShell(pip install *)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); $env:PYTHONPATH = \"E:\\\\finance-radar\"; python -m web.app)",
+      "PowerShell($response = Invoke-WebRequest -Uri \"http://127.0.0.1:5000/tabs\" -UseBasicParsing -ErrorAction Stop; $response.StatusCode)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); $env:PYTHONPATH = \"E:\\\\finance-radar\"; cd E:\\\\finance-radar; python -m web.app)",
+      "PowerShell(Start-Sleep -Seconds 3; try { $response = Invoke-WebRequest -Uri \"http://127.0.0.1:5000/tabs\" -UseBasicParsing -TimeoutSec 5; Write-Output \"✓ 状态码: $\\($response.StatusCode\\) - 页面加载成功！\" } catch { Write-Output \"✗ 错误: $_\" })"
     ]
   }
 }
